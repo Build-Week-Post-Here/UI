@@ -156,38 +156,80 @@ a {
   font-size: 1.8rem;
   font-family: 'Farro', sans-serif;
 }
-header {
-  background: #F08080;
-}
-header nav {
+nav {
   display: flex;
+  background-color: #F08080;
 }
-header nav .header-img {
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+nav .header-img {
   display: flex;
   align-items: center;
   width: 75%;
   padding: 10px;
 }
-header nav .header-img h2 {
+@media (max-width: 500px) {
+  nav .header-img {
+    width: 100%;
+    justify-content: center;
+  }
+}
+nav .header-img h2 {
   font-weight: bold;
   padding-left: 15px;
 }
-header nav .header-img img {
+nav .header-img img {
   width: 4%;
 }
-header nav .links {
+@media (max-width: 500px) {
+  nav .header-img img {
+    width: 8%;
+  }
+}
+nav .links {
   width: 25%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-header nav .links a {
+@media (max-width: 500px) {
+  nav .links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+  }
+}
+nav .links a {
   text-decoration: none;
   color: white;
 }
-header nav .links i {
+@media (max-width: 500px) {
+  nav .links a {
+    text-align: center;
+    padding: 2% 0;
+    width: 100%;
+    color: grey;
+    border-top: 1px solid grey;
+  }
+}
+nav .links i {
   font-size: 3rem;
   color: white;
+}
+@media (max-width: 500px) {
+  nav .links i {
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 2% 0;
+    color: grey;
+    border-top: 1px solid grey;
+  }
 }
 .container-icon {
   display: flex;

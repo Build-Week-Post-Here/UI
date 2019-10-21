@@ -1,10 +1,13 @@
 // Navigation code here
-header {
-    background: #F08080;
-
-
 nav {
     display: flex;
+    .nav-bg();
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        
+    } // ends media for nav
 
 .header-img {
     display: flex;
@@ -12,6 +15,11 @@ nav {
     width: 75%;
     padding: 10px;
    
+    @media @phone {
+        width: 100%;
+        justify-content: center;
+    }// ends media for .header-img
+
     h2 {
         font-weight: bold;
         padding-left: 15px;
@@ -20,9 +28,11 @@ nav {
 
 img {
     width: 4%;
-    // position: absolute;
-    // margin-top: 50px;
     
+    @media @phone {
+        width: 8%;
+    }
+
 } // ends img
 
 } // ends .header-img
@@ -33,10 +43,25 @@ img {
     justify-content: space-around;
     align-items: center;
 
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        
+    } // ends media for .links
+
 a {
     text-decoration: none;
     color: white;
     
+    @media @phone {
+        text-align: center;
+        padding: 2% 0;
+        width: 100%;
+        color: grey;
+        .media-border();
+    }// ends media for a
 
 } //ends a
 
@@ -44,10 +69,18 @@ i {
     font-size: 3rem;
     color: white;
 
+    @media @phone {
+        text-align: center;
+        width: 100%;
+        font-size: 2.5rem;
+        padding: 2% 0;
+        color: grey;
+        border-top: 1px solid grey;
+    }
+
 } // ends i
 
-} // this ends links
+} // ends links
 
-} // this ends nav
+} // ends nav
 
-} // this ends header
