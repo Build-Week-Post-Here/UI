@@ -160,11 +160,12 @@ html {
   font-display: swap;
   src: local('Russo One'), local('RussoOne-Regular'), url(https://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsHOz8mM.ttf) format('truetype');
 }
-.mid-and-below .mid-content-box img {
+.mid-and-below .mid-content-box .box {
   width: 100vw;
   height: 45vh;
   position: absolute;
   z-index: -1;
+  background: lightblue;
 }
 .mid-and-below .mid-content-box .mid-content-contents {
   padding: 6%;
@@ -178,7 +179,6 @@ html {
   font-size: 6rem;
   background-color: lightcoral;
   border: 2px solid salmon;
-  box-shadow: 5px 5px 5px maroon;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px coral, 1px 2px 5px whitesmoke;
 }
@@ -194,7 +194,8 @@ footer .bottom-red-box {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: -3%;
+  position: absolute;
+  bottom: 45%;
   width: 100vw;
   height: 10vh;
   background: lightcoral;
@@ -215,6 +216,11 @@ body .upper-content {
   flex-direction: column;
   align-items: center;
 }
+body .upper-content .boxes {
+  width: 20%;
+  height: 30%;
+  background: lightcoral;
+}
 body .upper-content h2 {
   font-size: 3rem;
   color: white;
@@ -227,5 +233,6 @@ body .upper-content p {
   text-shadow: 1px 1px 2px black, 0 0 25px silver, 1px 2px 5px whitesmoke;
 }
 body footer .bottom-red-box {
-  margin-top: 35%;
+  position: absolute;
+  bottom: 45%;
 }
