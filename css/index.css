@@ -160,3 +160,72 @@ html {
   font-display: swap;
   src: local('Russo One'), local('RussoOne-Regular'), url(https://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsHOz8mM.ttf) format('truetype');
 }
+.mid-and-below .mid-content-box img {
+  width: 100vw;
+  height: 45vh;
+  position: absolute;
+  z-index: -1;
+}
+.mid-and-below .mid-content-box .mid-content-contents {
+  padding: 6%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.mid-and-below .mid-content-box .mid-content-contents button {
+  width: 25vw;
+  font-size: 6rem;
+  background-color: lightcoral;
+  border: 2px solid salmon;
+  box-shadow: 5px 5px 5px maroon;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px coral, 1px 2px 5px whitesmoke;
+}
+.mid-and-below .mid-content-box .mid-content-contents p {
+  width: 80%;
+  font-size: 2rem;
+  padding: 2%;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px silver, 1px 2px 5px whitesmoke;
+}
+footer .bottom-red-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -3%;
+  width: 100vw;
+  height: 10vh;
+  background: lightcoral;
+}
+footer .bottom-red-box small {
+  color: white;
+  padding: 2%;
+}
+body img {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+body .upper-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .upper-content h2 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px silver, 1px 2px 5px whitesmoke;
+}
+body .upper-content p {
+  width: 80%;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px silver, 1px 2px 5px whitesmoke;
+}
+body footer .bottom-red-box {
+  margin-top: 35%;
+}
