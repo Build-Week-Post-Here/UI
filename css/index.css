@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: 'Electrolize';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Electrolize'), local('Electrolize-Regular'), url(https://fonts.gstatic.com/s/electrolize/v8/cIf5Ma1dtE0zSiGSiED7AXEBuIo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Farro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Farro Regular'), local('Farro-Regular'), url(https://fonts.gstatic.com/s/farro/v1/i7dEIFl3byGNHaVKFr4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jaldi';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Jaldi'), local('Jaldi-Regular'), url(https://fonts.gstatic.com/s/jaldi/v6/or3sQ67z0_CI33NTbJQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Russo One'), local('RussoOne-Regular'), url(https://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsHOz8mM.ttf) format('truetype');
+}
+.mid-and-below .mid-content-box .box {
+  width: 100vw;
+  height: 45vh;
+  position: absolute;
+  z-index: -1;
+  background: lightblue;
+}
+.mid-and-below .mid-content-box .mid-content-contents {
+  padding: 6%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.mid-and-below .mid-content-box .mid-content-contents button {
+  width: 25vw;
+  font-size: 6rem;
+  background-color: lightcoral;
+  border: 2px solid salmon;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px coral, 1px 2px 5px whitesmoke;
+}
+.mid-and-below .mid-content-box .mid-content-contents p {
+  width: 80%;
+  font-size: 2rem;
+  padding: 2%;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px silver, 1px 2px 5px whitesmoke;
+}
+footer .bottom-red-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 45%;
+  width: 100vw;
+  height: 10vh;
+  background: lightcoral;
+}
+footer .bottom-red-box small {
+  color: white;
+  padding: 2%;
+}
+body img {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+body .upper-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .upper-content .boxes {
+  width: 20%;
+  height: 30%;
+  background: lightcoral;
+}
+body .upper-content h2 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px silver, 1px 2px 5px whitesmoke;
+}
+body .upper-content p {
+  width: 80%;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px silver, 1px 2px 5px whitesmoke;
+}
+body footer .bottom-red-box {
+  position: absolute;
+  bottom: 45%;
+}
