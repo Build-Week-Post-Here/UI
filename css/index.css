@@ -326,25 +326,57 @@ footer .bottom-red-box small {
   color: white;
   padding: 2%;
 }
-body .upper-content {
+* {
+  border: 2px solid red !important;
+}
+.boxes {
+  width: 20vw;
+  height: 35vh;
+  border: 1px solid red;
+  background: coral;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  align-content: space-between;
 }
-body .upper-content .boxes {
-  width: 20%;
-  height: 30%;
-  background: lightcoral;
+.about-container {
+  height: 150vh;
+  background-image: url("/img/gradient2.jpg");
 }
-body .upper-content h2 {
-  font-size: 3rem;
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px silver, 1px 2px 5px whitesmoke;
+.box1 {
+  margin: 3% 0 3% 0;
 }
-body .upper-content p {
-  width: 80%;
-  font-size: 2rem;
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px silver, 1px 2px 5px whitesmoke;
+.box2 {
+  margin: 3% 0 3% 0;
+}
+.box3 {
+  margin: 3% 0 3% 0;
+}
+.box4 {
+  margin: 3% 0 3% 0;
+}
+.box5 {
+  margin: 3% 0 3% 0;
+}
+.box6 {
+  margin: 3% 0 3% 0;
+}
+.box7 {
+  margin: 3% 0 3% 0;
+}
+.box8 {
+  margin: 3% 0 3% 0;
+}
+.box9 {
+  margin: 3% 0 3% 0;
+  margin-bottom: 8%;
+}
+.box10 {
+  margin: 3% 0 3% 0;
+  margin-bottom: 8%;
+}
+.all-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
 }
