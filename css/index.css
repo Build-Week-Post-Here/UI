@@ -154,6 +154,10 @@ a {
   font-size: 1.8rem;
   font-family: 'Farro', sans-serif;
 }
+p {
+  font-size: 2rem;
+  font-family: 'Farro', sans-serif;
+}
 @font-face {
   font-family: 'Electrolize';
   font-style: normal;
@@ -338,10 +342,34 @@ footer .bottom-red-box small {
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.boxes img {
+  margin-bottom: 2%;
+}
+.boxes h4 {
+  margin-bottom: 2%;
+}
+.boxes i {
+  font-size: 8rem;
 }
 .about-container {
-  height: 150vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 170vh;
   background-image: url("/img/gradient2.jpg");
+}
+.upper-content {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
 }
 .box1 {
   margin: 3% 0 3% 0;
