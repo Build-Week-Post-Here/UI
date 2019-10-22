@@ -184,7 +184,10 @@ a {
 }
 nav {
   display: flex;
-  background-color: #FF5700;
+  background-color: white;
+}
+nav h2 {
+  color: black;
 }
 @media (max-width: 500px) {
   nav {
@@ -228,12 +231,12 @@ nav .links {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: white;
+    background-color: black;
   }
 }
 nav .links a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 nav .links a:hover {
   color: #FFB100;
@@ -249,7 +252,7 @@ nav .links a:hover {
 }
 nav .links i {
   font-size: 3rem;
-  color: white;
+  color: black;
 }
 nav .links i:hover {
   color: #FFB100;
@@ -263,10 +266,6 @@ nav .links i:hover {
     color: grey;
     border-top: 1px solid grey;
   }
-}
-.main-container {
-  display: flex;
-  flex-direction: column;
 }
 .container-icon {
   display: flex;
@@ -297,20 +296,23 @@ nav .links i:hover {
 }
 .mid-and-below .mid-content-contents button {
   border-radius: 10px;
-  font-size: 6rem;
+  font-size: 3.5rem;
   background-color: #FF5700;
-  border: 2px solid salmon;
+  border: 2px solid white;
+  font-family: 'Roboto Mono', monospace;
   color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px coral, 1px 2px 5px whitesmoke;
 }
 .mid-and-below .mid-content-contents button:hover {
   background-color: #FFB100;
 }
 .mid-and-below .mid-content-contents p {
+  text-align: center;
   width: 80%;
-  font-size: 2rem;
+  font-size: 3.5rem;
   padding: 2%;
+  padding-bottom: 3%;
   color: white;
+  font-family: 'Roboto Mono', monospace;
 }
 footer .bottom-red-box {
   display: flex;
@@ -319,11 +321,10 @@ footer .bottom-red-box {
   align-items: center;
   font-size: 1.6rem;
   width: 100%;
-  background: lightcoral;
-  background-color: #FF5700;
+  background-color: white;
 }
 footer .bottom-red-box small {
-  color: white;
+  color: black;
   padding: 2%;
 }
 body .upper-content {
