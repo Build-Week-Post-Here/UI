@@ -13,10 +13,30 @@
         display: flex;
         flex-direction: column;
         align-content: space-between;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        img{
+            margin-bottom: 2%;
+        }
+        h4{
+            margin-bottom: 2%;
+        }
+        i{
+            
+            font-size: 8rem;
+        }
     }
     .about-container{
-       height: 150vh;
-        background-image: url("/img/gradient2.jpg")
+        .flex-column-ctr();
+       height: 170vh;
+       background-image: url("/img/gradient2.jpg")
+    }
+
+    .upper-content{
+        margin-top: 5%;
+        .flex-column-ctr();
+        width: 80%;
     }
 .box1{
     .padding-for-boxes();
