@@ -335,6 +335,7 @@ footer .bottom-red-box small {
   border: 1px solid red;
   background: coral;
   display: flex;
+  flex-direction: column;
   align-content: space-between;
 }
 .about-container {
