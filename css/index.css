@@ -128,9 +128,31 @@ table {
 }
 * {
   box-sizing: border-box;
+  border: 2px solid red;
 }
 html {
   font-size: 62.5%;
+}
+h1 {
+  color: black;
+  font-size: 5rem;
+  font-family: 'Russo One', sans-serif;
+  font-weight: bold;
+}
+h2 {
+  font-size: 3.2rem;
+  font-family: 'Electrolize', sans-serif;
+  color: black;
+}
+h3 {
+  font-family: 'Jaldi', sans-serif;
+}
+h4 {
+  font-family: 'Farro', sans-serif;
+}
+a {
+  font-size: 1.8rem;
+  font-family: 'Farro', sans-serif;
 }
 @font-face {
   font-family: 'Electrolize';
@@ -160,55 +182,149 @@ html {
   font-display: swap;
   src: local('Russo One'), local('RussoOne-Regular'), url(https://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsHOz8mM.ttf) format('truetype');
 }
-.mid-and-below .mid-content-box .box {
-  width: 100vw;
-  height: 45vh;
-  position: absolute;
-  z-index: -1;
-  background: lightblue;
+nav {
+  display: flex;
+  background-color: #FF5700;
 }
-.mid-and-below .mid-content-box .mid-content-contents {
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+nav .header-img {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  nav .header-img {
+    width: 100%;
+    justify-content: center;
+  }
+}
+nav .header-img h2 {
+  font-weight: bold;
+  padding-left: 15px;
+}
+nav .header-img img {
+  width: 4%;
+  transform: rotate(-90deg);
+}
+@media (max-width: 500px) {
+  nav .header-img img {
+    width: 8%;
+  }
+}
+nav .links {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  nav .links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+  }
+}
+nav .links a {
+  text-decoration: none;
+  color: white;
+}
+nav .links a:hover {
+  color: #FFB100;
+}
+@media (max-width: 500px) {
+  nav .links a {
+    text-align: center;
+    padding: 2% 0;
+    width: 100%;
+    color: grey;
+    border-top: 1px solid grey;
+  }
+}
+nav .links i {
+  font-size: 3rem;
+  color: white;
+}
+nav .links i:hover {
+  color: #FFB100;
+}
+@media (max-width: 500px) {
+  nav .links i {
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 2% 0;
+    color: grey;
+    border-top: 1px solid grey;
+  }
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+.container-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EFEFED;
+}
+.container-icon img {
+  width: 15%;
+  padding-top: 25px;
+  transform: rotate(-90deg);
+}
+.container-icon h1 {
+  padding: 25px 0;
+}
+.mid-and-below {
+  width: 100%;
+  background-color: #336699;
+}
+.mid-and-below .mid-content-contents {
   padding: 6%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 75%;
+  margin: 0 auto;
 }
-.mid-and-below .mid-content-box .mid-content-contents button {
-  width: 25vw;
+.mid-and-below .mid-content-contents button {
+  border-radius: 10px;
   font-size: 6rem;
-  background-color: lightcoral;
+  background-color: #FF5700;
   border: 2px solid salmon;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px coral, 1px 2px 5px whitesmoke;
 }
-.mid-and-below .mid-content-box .mid-content-contents p {
+.mid-and-below .mid-content-contents button:hover {
+  background-color: #FFB100;
+}
+.mid-and-below .mid-content-contents p {
   width: 80%;
   font-size: 2rem;
   padding: 2%;
   color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px silver, 1px 2px 5px whitesmoke;
 }
 footer .bottom-red-box {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  bottom: 45%;
-  width: 100vw;
-  height: 10vh;
+  font-size: 1.6rem;
+  width: 100%;
   background: lightcoral;
+  background-color: #FF5700;
 }
 footer .bottom-red-box small {
   color: white;
   padding: 2%;
-}
-body img {
-  position: absolute;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
 }
 body .upper-content {
   display: flex;
@@ -231,8 +347,4 @@ body .upper-content p {
   font-size: 2rem;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px silver, 1px 2px 5px whitesmoke;
-}
-body footer .bottom-red-box {
-  position: absolute;
-  bottom: 45%;
 }
