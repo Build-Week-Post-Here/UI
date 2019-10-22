@@ -128,7 +128,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  border: 2px solid red;
 }
 html {
   font-size: 62.5%;
@@ -326,9 +325,6 @@ footer .bottom-red-box {
 footer .bottom-red-box small {
   color: black;
   padding: 2%;
-}
-* {
-  border: 2px solid red !important;
 }
 .boxes {
   width: 20vw;
