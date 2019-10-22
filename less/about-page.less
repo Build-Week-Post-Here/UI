@@ -1,75 +1,166 @@
-*{
-    border: 2px solid red !important;
-}
 
 
 
     .boxes{
         width: 20vw;
         height: 35vh;
-        border:1px solid red;
+        border:3px solid orange;
         background: coral;
         //z-index: 3;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-content: space-between;
         justify-content: center;
         align-items: center;
-        font-size: 3rem;
+        font-size: 1.8rem;
         img{
             margin-bottom: 2%;
+            width: 50%;
+            
         }
         h4{
             margin-bottom: 2%;
         }
         i{
             
-            font-size: 8rem;
+            font-size: 4rem;
+        }
+        @media @phone{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width:30%;
+            height: 35%;
         }
     }
+
     .about-container{
         .flex-column-ctr();
        height: 170vh;
-       background-image: url("/img/gradient2.jpg")
+       background-image: url("/img/gradient2.jpg");
+        @media @phone {
+            height: 480vh;
+        }
     }
 
     .upper-content{
         margin-top: 5%;
         .flex-column-ctr();
         width: 80%;
+        color: white;
+        h2{
+            color: white;
+        }
     }
+    
 .box1{
     .padding-for-boxes();
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    @media @phone{
+        width: 90%;
+        display: flex;
+        
+    }
+    
     
 }
 .box2{
     .padding-for-boxes();
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    @media @phone{
+        width: 90%;
+    }
 }
 .box3{
     .padding-for-boxes();
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    @media @phone{
+        width: 90%;
+    }
 }
 .box4{
     .padding-for-boxes();
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    @media @phone{
+        width: 90%;
+    }
+    img{
+        width: 40%;
+    }
 }
 .box5{
     .padding-for-boxes();
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    @media @phone{
+        width: 90%;
+    }
 }
 .box6{
     .padding-for-boxes();
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    @media @phone{
+        width: 90%;
+    }
 }
 .box7{
     .padding-for-boxes();
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    @media @phone{
+        width: 90%;
+    }
 }
 .box8{
     .padding-for-boxes();
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    @media @phone{
+        width: 90%;
+    }
 }
 .box9{
     .padding-for-boxes();
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
     margin-bottom: 8%;
+    @media @phone{
+        width: 90%;
+    }
 }
 .box10{
     .padding-for-boxes();
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
     margin-bottom: 8%;
+    @media @phone{
+        width: 90%;
+    }
 }
 
     .all-boxes{
@@ -78,11 +169,18 @@
         justify-content: space-evenly;
         width: 100%;
         height: 100%;
+        @media @phone{
+            flex-direction: column;
+            max-width: 100%;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
     }
 
     .github{
 
     }
+
     // footer{
     //     .bottom-red-box{
     //             position: absolute;
