@@ -4,13 +4,13 @@ nav {
     .nav-bg();
 
     h2 {
-        // color: white;
         color: black;
     }
 
     @media @phone {
         display: flex;
         flex-direction: column;
+        padding-top: 2%;
         
     } // ends media for nav
 
@@ -23,6 +23,7 @@ nav {
     @media @phone {
         width: 100%;
         justify-content: center;
+
     }// ends media for .header-img
 
     h2 {
@@ -35,7 +36,7 @@ img {
     width: 4%;
     transform: rotate(-90deg);
     @media @phone {
-        width: 8%;
+    width: 8%;
     }
 
 } // ends img
@@ -52,7 +53,7 @@ img {
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: black;
+        background-color: white;
         
     } // ends media for .links
 
@@ -70,6 +71,7 @@ a {
         width: 100%;
         color: grey;
         .media-border();
+
     }// ends media for a
 
 } //ends a
@@ -86,9 +88,7 @@ i {
         text-align: center;
         width: 100%;
         font-size: 2.5rem;
-        padding: 2% 0;
         color: grey;
-        border-top: 1px solid grey;
     }
 
 } // ends i

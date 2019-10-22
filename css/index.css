@@ -196,6 +196,7 @@ nav h2 {
   nav {
     display: flex;
     flex-direction: column;
+    padding-top: 2%;
   }
 }
 nav .header-img {
@@ -234,7 +235,7 @@ nav .links {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: black;
+    background-color: white;
   }
 }
 nav .links a {
@@ -265,21 +266,25 @@ nav .links i:hover {
     text-align: center;
     width: 100%;
     font-size: 2.5rem;
-    padding: 2% 0;
     color: grey;
-    border-top: 1px solid grey;
   }
 }
 .container-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #EFEFED;
+  background-color: #A9A9A9;
+  padding-top: 5%;
 }
 .container-icon img {
   width: 15%;
-  padding-top: 25px;
   transform: rotate(-90deg);
+}
+@media (max-width: 500px) {
+  .container-icon img {
+    padding: 10% 0;
+    width: 25%;
+  }
 }
 .container-icon h1 {
   padding: 25px 0;
@@ -288,7 +293,7 @@ nav .links i:hover {
   width: 100%;
   background-color: #336699;
 }
-.mid-and-below .mid-content-contents {
+.mid-content-contents {
   padding: 6%;
   display: flex;
   justify-content: center;
@@ -297,7 +302,12 @@ nav .links i:hover {
   width: 75%;
   margin: 0 auto;
 }
-.mid-and-below .mid-content-contents button {
+@media (max-width: 500px) {
+  .mid-content-contents {
+    width: 100%;
+  }
+}
+.mid-content-contents button {
   border-radius: 10px;
   font-size: 3.5rem;
   background-color: #FF5700;
@@ -305,10 +315,10 @@ nav .links i:hover {
   font-family: 'Roboto Mono', monospace;
   color: white;
 }
-.mid-and-below .mid-content-contents button:hover {
+.mid-content-contents button:hover {
   background-color: #FFB100;
 }
-.mid-and-below .mid-content-contents p {
+.mid-content-contents p {
   text-align: center;
   width: 80%;
   font-size: 3.5rem;
@@ -316,6 +326,14 @@ nav .links i:hover {
   padding-bottom: 3%;
   color: white;
   font-family: 'Roboto Mono', monospace;
+}
+@media (max-width: 500px) {
+  .mid-content-contents p {
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 10% 0;
+    line-height: 2.5rem;
+  }
 }
 footer .bottom-red-box {
   display: flex;
@@ -329,6 +347,18 @@ footer .bottom-red-box {
 footer .bottom-red-box small {
   color: black;
   padding: 2%;
+}
+.box1 {
+  border: 1px solid red;
+}
+.box1 img {
+  width: 50%;
+}
+.box1 h4 {
+  border: 2px solid red;
+}
+.box1 a {
+  border: 2px solid red;
 }
 .boxes {
   width: 20vw;
