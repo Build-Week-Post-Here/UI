@@ -363,23 +363,33 @@ footer .bottom-red-box small {
 .boxes {
   width: 20vw;
   height: 35vh;
-  border: 1px solid red;
+  border: 3px solid orange;
   background: coral;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-content: space-between;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 1.8rem;
 }
 .boxes img {
   margin-bottom: 2%;
+  width: 50%;
 }
 .boxes h4 {
   margin-bottom: 2%;
 }
 .boxes i {
-  font-size: 8rem;
+  font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .boxes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 35%;
+  }
 }
 .about-container {
   display: flex;
@@ -389,6 +399,11 @@ footer .bottom-red-box small {
   height: 170vh;
   background-image: url("/img/gradient2.jpg");
 }
+@media (max-width: 500px) {
+  .about-container {
+    height: 480vh;
+  }
+}
 .upper-content {
   margin-top: 5%;
   display: flex;
@@ -396,38 +411,136 @@ footer .bottom-red-box small {
   flex-direction: column;
   align-items: center;
   width: 80%;
+  color: white;
+}
+.upper-content h2 {
+  color: white;
 }
 .box1 {
   margin: 3% 0 3% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .box1 {
+    width: 90%;
+    display: flex;
+  }
 }
 .box2 {
   margin: 3% 0 3% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .box2 {
+    width: 90%;
+  }
 }
 .box3 {
   margin: 3% 0 3% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .box3 {
+    width: 90%;
+  }
 }
 .box4 {
   margin: 3% 0 3% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .box4 {
+    width: 90%;
+  }
+}
+.box4 img {
+  width: 40%;
 }
 .box5 {
   margin: 3% 0 3% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .box5 {
+    width: 90%;
+  }
 }
 .box6 {
   margin: 3% 0 3% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .box6 {
+    width: 90%;
+  }
 }
 .box7 {
   margin: 3% 0 3% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .box7 {
+    width: 90%;
+  }
 }
 .box8 {
   margin: 3% 0 3% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .box8 {
+    width: 90%;
+  }
 }
 .box9 {
   margin: 3% 0 3% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
   margin-bottom: 8%;
+}
+@media (max-width: 500px) {
+  .box9 {
+    width: 90%;
+  }
 }
 .box10 {
   margin: 3% 0 3% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
   margin-bottom: 8%;
+}
+@media (max-width: 500px) {
+  .box10 {
+    width: 90%;
+  }
 }
 .all-boxes {
   display: flex;
@@ -435,4 +548,12 @@ footer .bottom-red-box small {
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .all-boxes {
+    flex-direction: column;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 }
