@@ -302,6 +302,11 @@ nav .links a:hover {
     width: 95%;
   }
 }
+@media (max-width: 1000px) {
+  .container-icon p {
+    font-size: 1.8rem;
+  }
+}
 .mid-and-below {
   width: 100%;
   background-color: #336699;
@@ -347,6 +352,11 @@ nav .links a:hover {
     padding: 3% 0;
   }
 }
+@media (max-width: 1000px) {
+  .mid-content-contents p {
+    font-size: 2rem;
+  }
+}
 footer .bottom-red-box {
   display: flex;
   justify-content: center;
@@ -383,6 +393,7 @@ footer .bottom-red-box small {
   justify-content: center;
   align-items: center;
   font-size: 1.8rem;
+  opacity: 0.6;
 }
 .boxes img {
   margin-bottom: 2%;
@@ -457,6 +468,13 @@ footer .bottom-red-box small {
   flex-direction: column;
   align-content: center;
 }
+.box1.grow {
+  transition: all 200ms ease-in-out;
+}
+.box1.grow:hover {
+  transform: scale(1.3);
+  opacity: 1;
+}
 @media (max-width: 500px) {
   .box1 {
     width: 90%;
@@ -470,7 +488,7 @@ footer .bottom-red-box small {
     text-align: center;
   }
 }
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .box1 {
     margin-left: 4%;
   }
@@ -481,6 +499,13 @@ footer .bottom-red-box small {
   justify-content: center;
   flex-direction: column;
   align-content: center;
+}
+.box2.grow {
+  transition: all 200ms ease-in-out;
+}
+.box2.grow:hover {
+  transform: scale(1.3);
+  opacity: 1;
 }
 @media (max-width: 500px) {
   .box2 {
@@ -512,6 +537,13 @@ footer .bottom-red-box small {
   flex-direction: column;
   align-content: center;
 }
+.box3.grow {
+  transition: all 200ms ease-in-out;
+}
+.box3.grow:hover {
+  transform: scale(1.3);
+  opacity: 1;
+}
 @media (max-width: 500px) {
   .box3 {
     width: 90%;
@@ -531,6 +563,13 @@ footer .bottom-red-box small {
   justify-content: center;
   flex-direction: column;
   align-content: center;
+}
+.box4.grow {
+  transition: all 200ms ease-in-out;
+}
+.box4.grow:hover {
+  transform: scale(1.3);
+  opacity: 1;
 }
 @media (max-width: 500px) {
   .box4 {
@@ -571,6 +610,13 @@ footer .bottom-red-box small {
   flex-direction: column;
   align-content: center;
 }
+.box5.grow {
+  transition: all 200ms ease-in-out;
+}
+.box5.grow:hover {
+  transform: scale(1.3);
+  opacity: 1;
+}
 .box5 img {
   width: 40%;
 }
@@ -592,7 +638,7 @@ footer .bottom-red-box small {
     text-align: center;
   }
 }
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .box5 {
     margin-left: 4%;
   }
@@ -603,6 +649,13 @@ footer .bottom-red-box small {
   justify-content: center;
   flex-direction: column;
   align-content: center;
+}
+.box6.grow {
+  transition: all 200ms ease-in-out;
+}
+.box6.grow:hover {
+  transform: scale(1.3);
+  opacity: 1;
 }
 @media (max-width: 500px) {
   .box6 {
@@ -616,7 +669,7 @@ footer .bottom-red-box small {
     text-align: center;
   }
 }
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .box6 h4 {
     text-align: center;
   }
@@ -635,6 +688,13 @@ footer .bottom-red-box small {
   justify-content: center;
   flex-direction: column;
   align-content: center;
+}
+.box7.grow {
+  transition: all 200ms ease-in-out;
+}
+.box7.grow:hover {
+  transform: scale(1.3);
+  opacity: 1;
 }
 @media (max-width: 500px) {
   .box7 {
@@ -666,6 +726,13 @@ footer .bottom-red-box small {
   flex-direction: column;
   align-content: center;
 }
+.box8.grow {
+  transition: all 200ms ease-in-out;
+}
+.box8.grow:hover {
+  transform: scale(1.3);
+  opacity: 1;
+}
 .box8 img {
   width: 45%;
 }
@@ -695,6 +762,13 @@ footer .bottom-red-box small {
   align-content: center;
   margin-bottom: 8%;
 }
+.box9.grow {
+  transition: all 200ms ease-in-out;
+}
+.box9.grow:hover {
+  transform: scale(1.3);
+  opacity: 1;
+}
 @media (max-width: 500px) {
   .box9 img {
     margin-left: 5%;
@@ -717,7 +791,7 @@ footer .bottom-red-box small {
     margin-right: 3%;
   }
 }
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .box9 h4 {
     text-align: center;
   }
@@ -729,6 +803,13 @@ footer .bottom-red-box small {
   flex-direction: column;
   align-content: center;
   margin-bottom: 8%;
+}
+.box10.grow {
+  transition: all 200ms ease-in-out;
+}
+.box10.grow:hover {
+  transform: scale(1.3);
+  opacity: 1;
 }
 @media (max-width: 500px) {
   .box10 {

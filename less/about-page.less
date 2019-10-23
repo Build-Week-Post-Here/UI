@@ -3,7 +3,7 @@
         @media @tablet{
        padding-right: 3%;
        width: 100%;
-       text-align: center;
+       text-align: @ctr;
         }
     }
 }
@@ -16,9 +16,10 @@
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
-        justify-content: center;
-        align-items: center;
+        justify-content: @ctr;
+        align-items: @ctr;
         font-size: 1.8rem;
+        opacity: .6;
         img{
             margin-bottom: 2%;
             width: 50%;
@@ -28,6 +29,7 @@
                 justify-content: space-evenly;
                 margin-left: 4%;
             }
+        
             
         }
         h4{
@@ -42,8 +44,8 @@
         }
         @media @phone{
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: @ctr;
+            align-items: @ctr;
             width:25%;
             
         }
@@ -80,9 +82,11 @@
 .box1{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+
+    .grow-animation();
     @media @phone{
         width: 90%;
         display: flex;
@@ -92,7 +96,7 @@
     @media @tablet{
         margin: 0;
         margin-right: 2%;
-        text-align: center;
+        text-align: @ctr;
     }
     @media @desktop{
         margin-left: 4%;
@@ -103,16 +107,17 @@
 .box2{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
     @media @phone{
         width: 90%;
     }
     @media @tablet{
         margin: 0;
         margin-right: 2%;
-        text-align: center;
+        text-align: @ctr;
         margin-top: 0;
     }
     img{
@@ -128,27 +133,29 @@
 .box3{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
     }
     @media @tablet{
         margin: 0;
         margin-right: 2%;
-        align-items: center;
-        text-align: center;
+        align-items: @ctr;
+        text-align: @ctr;
     }
 }
 .box4{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
     }
     img{
         width: 40%;
@@ -159,7 +166,7 @@
     @media @tablet{
         margin: 0;
         margin-right: 2%;
-        text-align: center;
+        text-align: @ctr;
     }
     img{
         @media @tablet{
@@ -175,9 +182,10 @@
 .box5{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
     img{
         width: 40%;
         @media @phone{
@@ -186,12 +194,12 @@
         }
     }
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
     }
     @media @tablet{
         margin: 0;
         margin-right: 2%;
-        text-align: center;
+        text-align: @ctr;
     }
     @media @desktop{
         margin-left: 4%;
@@ -200,21 +208,22 @@
 .box6{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
        
     }
     @media @tablet{
         margin: 0;
         margin-right: 2%;
-        text-align: center;
+        text-align: @ctr;
     }
     h4{
         @media @desktop{
-            text-align: center;
+            text-align: @ctr;
         }
     }
     a{
@@ -231,16 +240,17 @@
 .box7{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
     }
     @media @tablet{
         margin: 0;
         margin-right: 2%;
-        text-align: center;
+        text-align: @ctr;
     }
     img{
         @media @tablet{
@@ -255,19 +265,20 @@
 .box8{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
     img{
         width: 45%;
     }
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
     }
     @media @tablet{
         margin: 0;
         margin-right: 2%;
-        text-align: center;
+        text-align: @ctr;
 
     }
     img{
@@ -281,22 +292,23 @@
 .box9{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
     margin-bottom: 8%;
+    .grow-animation();
     img{
         @media @phone{
             margin-left: 5%;
         }
     }
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
     }
     @media @tablet{
         margin: 0;
         margin-right: 2%;
-        text-align: center;
+        text-align: @ctr;
     }
     a{
         @media @tablet{
@@ -305,24 +317,25 @@
     }
     h4{
         @media @desktop{
-            text-align: center;
+            text-align: @ctr;
         }
     }
 }
 .box10{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
     margin-bottom: 8%;
+    .grow-animation();
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
     }
     @media @tablet{
         margin: 0;
         margin-right: 2%;
-        text-align: center;
+        text-align: @ctr;
     }
     img{
         @media @tablet{
@@ -346,7 +359,7 @@
             flex-direction: column;
             max-width: 100%;
             flex-wrap: nowrap;
-            align-items: center;
+            align-items: @ctr;
         }
         @media @tablet{
             display: flex;
@@ -354,13 +367,4 @@
             width: 100%;
         }
     }
-
-   
-
-    // footer{
-    //     .bottom-red-box{
-    //             position: absolute;
-    //             bottom: 45%;
-    //     }
-    // }
     
