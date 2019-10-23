@@ -3,6 +3,12 @@ nav {
     display: flex;
     .nav-bg();
 
+    .icon-link {
+        width: 5%;
+
+    }
+
+
     h2 {
         color: black;
     }
@@ -17,8 +23,9 @@ nav {
 .header-img {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     width: 75%;
-    padding: 10px;
+    padding: 5px;
    
     @media @phone {
         width: 100%;
@@ -28,15 +35,17 @@ nav {
 
     h2 {
         font-weight: bold;
-        padding-left: 15px;
+        padding-left: 10px;
 
     }
 
 img {
-    width: 4%;
+    
+    width: 100%;
     transform: rotate(-90deg);
+
     @media @phone {
-    width: 8%;
+    width: 100%;
     }
 
 } // ends img
@@ -75,23 +84,6 @@ a {
     }// ends media for a
 
 } //ends a
-
-i {
-    font-size: 3rem;
-    color: black;
-
-    &:hover {
-        color: #FFB100;
-    }
-
-    @media @phone {
-        text-align: center;
-        width: 100%;
-        font-size: 2.5rem;
-        color: grey;
-    }
-
-} // ends i
 
 } // ends links
 

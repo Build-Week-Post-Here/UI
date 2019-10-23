@@ -189,6 +189,9 @@ nav {
   display: flex;
   background-color: white;
 }
+nav .icon-link {
+  width: 5%;
+}
 nav h2 {
   color: black;
 }
@@ -202,8 +205,9 @@ nav h2 {
 nav .header-img {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   width: 75%;
-  padding: 10px;
+  padding: 5px;
 }
 @media (max-width: 500px) {
   nav .header-img {
@@ -213,15 +217,15 @@ nav .header-img {
 }
 nav .header-img h2 {
   font-weight: bold;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 nav .header-img img {
-  width: 4%;
+  width: 100%;
   transform: rotate(-90deg);
 }
 @media (max-width: 500px) {
   nav .header-img img {
-    width: 8%;
+    width: 100%;
   }
 }
 nav .links {
@@ -254,47 +258,56 @@ nav .links a:hover {
     border-top: 1px solid grey;
   }
 }
-nav .links i {
-  font-size: 3rem;
-  color: black;
-}
-nav .links i:hover {
-  color: #FFB100;
-}
-@media (max-width: 500px) {
-  nav .links i {
-    text-align: center;
-    width: 100%;
-    font-size: 2.5rem;
-    color: grey;
-  }
+.large-img-container {
+  background-color: #A9A9A9;
 }
 .container-icon {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 0 auto;
   align-items: center;
-  background-color: #A9A9A9;
-  padding-top: 5%;
+  padding: 5% 0;
+}
+@media (max-width: 500px) {
+  .container-icon {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .container-icon img {
-  width: 15%;
-  transform: rotate(-90deg);
+  width: 35%;
 }
 @media (max-width: 500px) {
   .container-icon img {
-    padding: 10% 0;
-    width: 25%;
+    padding-top: 5%;
+    width: 95%;
   }
 }
 .container-icon h1 {
   padding: 25px 0;
+  color: white;
+}
+.container-icon p {
+  color: white;
+  width: 35%;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+@media (max-width: 500px) {
+  .container-icon p {
+    font-size: 1.6rem;
+    width: 95%;
+  }
 }
 .mid-and-below {
   width: 100%;
   background-color: #336699;
 }
 .mid-content-contents {
-  padding: 6%;
+  padding: 3% 6%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -325,14 +338,13 @@ nav .links i:hover {
   padding: 2%;
   padding-bottom: 3%;
   color: white;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Ubuntu', sans-serif;
 }
 @media (max-width: 500px) {
   .mid-content-contents p {
     width: 100%;
     font-size: 1.8rem;
-    padding: 10% 0;
-    line-height: 2.5rem;
+    padding: 3% 0;
   }
 }
 footer .bottom-red-box {
@@ -346,7 +358,12 @@ footer .bottom-red-box {
 }
 footer .bottom-red-box small {
   color: black;
-  padding: 2%;
+  font-family: 'Ubuntu', sans-serif;
+}
+@media (max-width: 500px) {
+  footer .bottom-red-box small {
+    padding: 5% 0;
+  }
 }
 @media (max-width: 800px) {
   .links a {
