@@ -26,6 +26,7 @@
                 width: 35%;
                 margin-right: 5%;
                 justify-content: space-evenly;
+                margin-left: 4%;
             }
             
         }
@@ -177,6 +178,13 @@
     justify-content: center;
     flex-direction: column;
     align-content: center;
+    img{
+        width: 40%;
+        @media @phone{
+            width: 30%;
+            margin-left: 4%;
+        }
+    }
     @media @phone{
         width: 90%;
     }
@@ -197,13 +205,18 @@
     align-content: center;
     @media @phone{
         width: 90%;
+       
     }
     @media @tablet{
         margin: 0;
         margin-right: 2%;
         text-align: center;
     }
-    
+    h4{
+        @media @desktop{
+            text-align: center;
+        }
+    }
     a{
         @media @tablet{
             margin-right: 2%;
@@ -235,6 +248,7 @@
         }
         @media @phone{
             margin-top: 0%;
+            margin-left: 4%;
         }
     }
 }
@@ -287,6 +301,11 @@
     a{
         @media @tablet{
             margin-right: 3%;
+        }
+    }
+    h4{
+        @media @desktop{
+            text-align: center;
         }
     }
 }

@@ -393,6 +393,7 @@ footer .bottom-red-box small {
     width: 35%;
     margin-right: 5%;
     justify-content: space-evenly;
+    margin-left: 4%;
   }
 }
 .boxes h4 {
@@ -570,6 +571,15 @@ footer .bottom-red-box small {
   flex-direction: column;
   align-content: center;
 }
+.box5 img {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .box5 img {
+    width: 30%;
+    margin-left: 4%;
+  }
+}
 @media (max-width: 500px) {
   .box5 {
     width: 90%;
@@ -603,6 +613,11 @@ footer .bottom-red-box small {
   .box6 {
     margin: 0;
     margin-right: 2%;
+    text-align: center;
+  }
+}
+@media (min-width: 1000px) {
+  .box6 h4 {
     text-align: center;
   }
 }
@@ -641,6 +656,7 @@ footer .bottom-red-box small {
 @media (max-width: 500px) {
   .box7 img {
     margin-top: 0%;
+    margin-left: 4%;
   }
 }
 .box8 {
@@ -699,6 +715,11 @@ footer .bottom-red-box small {
 @media (max-width: 800px) {
   .box9 a {
     margin-right: 3%;
+  }
+}
+@media (min-width: 1000px) {
+  .box9 h4 {
+    text-align: center;
   }
 }
 .box10 {
