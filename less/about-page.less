@@ -1,3 +1,13 @@
+.links{
+    a{
+        @media @tablet{
+       padding-right: 3%;
+       width: 100%;
+       text-align: @ctr;
+        }
+    }
+}
+
   .boxes{
         width: 20vw;
         height: 35vh;
@@ -6,12 +16,20 @@
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
-        justify-content: center;
-        align-items: center;
+        justify-content: @ctr;
+        align-items: @ctr;
         font-size: 1.8rem;
+        opacity: .6;
         img{
             margin-bottom: 2%;
             width: 50%;
+            @media @phone{
+                width: 35%;
+                margin-right: 5%;
+                justify-content: space-evenly;
+                margin-left: 4%;
+            }
+        
             
         }
         h4{
@@ -20,14 +38,22 @@
         i{
             
             font-size: 4rem;
+            @media @phone{
+                font-size: 10rem;
+            }
         }
         @media @phone{
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width:30%;
-            height: 35%;
+            justify-content: @ctr;
+            align-items: @ctr;
+            width:25%;
+            
         }
+        @media @tablet{
+            width: 20vw;
+        }
+        
+        
     }
 
     .about-container{
@@ -37,6 +63,7 @@
         @media @phone {
             height: 480vh;
         }
+        
     }
 
     .upper-content{
@@ -47,115 +74,278 @@
         h2{
             color: white;
         }
+        @media @tablet{
+            margin-bottom: 3%;
+        }
     }
     
 .box1{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+
+    .grow-animation();
     @media @phone{
         width: 90%;
         display: flex;
         
     }
-    
-    
+
+    @media @tablet{
+        margin: 0;
+        margin-right: 2%;
+        text-align: @ctr;
+    }
+    @media @desktop{
+        margin-left: 4%;
+    }
+ 
 }
+
 .box2{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
     @media @phone{
         width: 90%;
     }
+    @media @tablet{
+        margin: 0;
+        margin-right: 2%;
+        text-align: @ctr;
+        margin-top: 0;
+    }
+    img{
+        @media @tablet{
+            margin-top: 12%;
+        }
+        @media @phone{
+            margin-top: 0%;
+        }
+    }
 }
+
 .box3{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
+    }
+    @media @tablet{
+        margin: 0;
+        margin-right: 2%;
+        align-items: @ctr;
+        text-align: @ctr;
     }
 }
 .box4{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
     }
     img{
         width: 40%;
+        @media @phone{
+            width: 30%
+        }
     }
+    @media @tablet{
+        margin: 0;
+        margin-right: 2%;
+        text-align: @ctr;
+    }
+    img{
+        @media @tablet{
+            margin-top: 12%;
+        }
+        @media @phone{
+            margin-top: 0%;
+            height: 63%;
+            margin-left: 5%;
+        }
+}
 }
 .box5{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
+    img{
+        width: 40%;
+        @media @phone{
+            width: 30%;
+            margin-left: 4%;
+        }
+    }
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
+    }
+    @media @tablet{
+        margin: 0;
+        margin-right: 2%;
+        text-align: @ctr;
+    }
+    @media @desktop{
+        margin-left: 4%;
     }
 }
 .box6{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
+       
+    }
+    @media @tablet{
+        margin: 0;
+        margin-right: 2%;
+        text-align: @ctr;
+    }
+    h4{
+        @media @desktop{
+            text-align: @ctr;
+        }
+    }
+    a{
+        @media @tablet{
+            margin-right: 2%;
+        }
+        
+    }
+    i{
+        margin-bottom: 4%;
+        
     }
 }
 .box7{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
+    }
+    @media @tablet{
+        margin: 0;
+        margin-right: 2%;
+        text-align: @ctr;
+    }
+    img{
+        @media @tablet{
+            margin-top: 23%;
+        }
+        @media @phone{
+            margin-top: 0%;
+            margin-left: 4%;
+        }
     }
 }
 .box8{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
+    .grow-animation();
+    img{
+        width: 45%;
+    }
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
+    }
+    @media @tablet{
+        margin: 0;
+        margin-right: 2%;
+        text-align: @ctr;
+
+    }
+    img{
+        @media @phone{
+            width: 29%;
+            margin-left: 4%;
+            
+        }
     }
 }
 .box9{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
     margin-bottom: 8%;
+    .grow-animation();
+    img{
+        @media @phone{
+            margin-left: 5%;
+        }
+    }
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
+    }
+    @media @tablet{
+        margin: 0;
+        margin-right: 2%;
+        text-align: @ctr;
+    }
+    a{
+        @media @tablet{
+            margin-right: 3%;
+        }
+    }
+    h4{
+        @media @desktop{
+            text-align: @ctr;
+        }
     }
 }
 .box10{
     .padding-for-boxes();
     display: flex;
-    justify-content: center;
+    justify-content: @ctr;
     flex-direction: column;
-    align-content: center;
+    align-content: @ctr;
     margin-bottom: 8%;
+    .grow-animation();
     @media @phone{
-        width: 90%;
+        width: @width-for-boxes;
+    }
+    @media @tablet{
+        margin: 0;
+        margin-right: 2%;
+        text-align: @ctr;
+    }
+    img{
+        @media @tablet{
+            margin-top: 17%;
+        }
+        @media @tablet{
+            margin-top: 0%;
+            width: 32%;
+            margin-left: 4%;
+        }
     }
 }
 
@@ -169,8 +359,12 @@
             flex-direction: column;
             max-width: 100%;
             flex-wrap: nowrap;
-            align-items: center;
+            align-items: @ctr;
+        }
+        @media @tablet{
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
         }
     }
-
     
