@@ -5,18 +5,24 @@
     flex-direction: column;
     align-items: center;
     .icon-container();
-    
+    padding-top: 5%;
 
     img {
         width: 15%;
-        padding-top: 25px;
+        // padding-right: 1%;
         transform: rotate(-90deg);
+        
+        @media @phone {
+            padding: 10% 0;
+            width: 25%;
+        }
         
     } // ends img
 
     h1 {
         padding: 25px 0;
-    }
+
+    } // ends h1
 
 
 } // ends .container-icon
@@ -24,23 +30,19 @@
 
 .mid-and-below{
     width: 100%;
-    // background: lightblue;
-    // background-color: #CEE3F8;
     background-color: #336699;
-    // .mid-content-box{
-        
-    //     width: 100vw;
-    //     height: 45vh;
-    //     position: absolute;
-    //     z-index: -1;
-    //     
-    //     }
+    
+         }
 
         .mid-content-contents{
             padding: 6%;
             .flex-column-ctr();
             width: 75%;
             margin: 0 auto;
+
+            @media @phone {
+                width: 100%;
+            }
 
             button{
                 // width: 25vw;
@@ -67,10 +69,18 @@
                 color: white;
                 font-family: 'Roboto Mono', monospace;
                 // text-shadow: 1px 1px 2px black, 0 0 25px silver, 1px 2px 5px whitesmoke;
+
+                @media @phone {
+                    width: 100%;
+                    font-size: 1.8rem;
+                    padding: 10% 0;
+                    line-height: 2.5rem;
+                }
+
             }
         }
        
-    }
+    
    
 
 footer{
@@ -84,7 +94,6 @@ footer{
     // background: lightcoral;
     // background-color: #FF5700;
     background-color: white;
-
 
     small{
         color: black;
