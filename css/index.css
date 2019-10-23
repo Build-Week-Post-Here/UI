@@ -271,14 +271,13 @@ nav .links i:hover {
 }
 .container-icon {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #A9A9A9;
   padding-top: 5%;
 }
 .container-icon img {
-  width: 15%;
-  transform: rotate(-90deg);
+  width: 20%;
 }
 @media (max-width: 500px) {
   .container-icon img {
