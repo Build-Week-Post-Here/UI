@@ -1,3 +1,13 @@
+.links{
+    a{
+        @media @tablet{
+       padding-right: 3%;
+       width: 100%;
+       text-align: center;
+        }
+    }
+}
+
   .boxes{
         width: 20vw;
         height: 35vh;
@@ -14,8 +24,9 @@
             margin-bottom: 2%;
             width: 50%;
             @media @phone{
-                width: 40%;
+                width: 35%;
                 margin-right: 5%;
+                justify-content: space-evenly;
             }
             
         }
@@ -25,17 +36,19 @@
         i{
             
             font-size: 4rem;
+            @media @phone{
+                font-size: 10rem;
+            }
         }
         @media @phone{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width:30%;
-            height: 35%;
+            width:25%;
+            
         }
         @media @tablet{
             width: 20vw;
-            height: 30vh;
         }
         
         
@@ -75,12 +88,15 @@
         display: flex;
         
     }
+
     @media @tablet{
         margin: 0;
         margin-right: 2%;
         text-align: center;
     }
-    
+    @media @desktop{
+        margin-left: 4%;
+    }
  
 }
 
@@ -102,6 +118,9 @@
     img{
         @media @tablet{
             margin-top: 12%;
+        }
+        @media @phone{
+            margin-top: 0%;
         }
     }
 }
@@ -146,6 +165,11 @@
         @media @tablet{
             margin-top: 12%;
         }
+        @media @phone{
+            margin-top: 0%;
+            height: 63%;
+            margin-left: 5%;
+        }
 }
 }
 .box5{
@@ -162,6 +186,9 @@
         margin-right: 2%;
         text-align: center;
     }
+    @media @desktop{
+        margin-left: 4%;
+    }
 }
 .box6{
     .padding-for-boxes();
@@ -176,6 +203,17 @@
         margin: 0;
         margin-right: 2%;
         text-align: center;
+    }
+    
+    a{
+        @media @tablet{
+            margin-right: 2%;
+        }
+        
+    }
+    i{
+        margin-bottom: 4%;
+        
     }
 }
 .box7{
@@ -192,6 +230,14 @@
         margin-right: 2%;
         text-align: center;
     }
+    img{
+        @media @tablet{
+            margin-top: 23%;
+        }
+        @media @phone{
+            margin-top: 0%;
+        }
+    }
 }
 .box8{
     .padding-for-boxes();
@@ -199,6 +245,9 @@
     justify-content: center;
     flex-direction: column;
     align-content: center;
+    img{
+        width: 45%;
+    }
     @media @phone{
         width: 90%;
     }
@@ -206,6 +255,14 @@
         margin: 0;
         margin-right: 2%;
         text-align: center;
+
+    }
+    img{
+        @media @phone{
+            width: 29%;
+            margin-left: 4%;
+            
+        }
     }
 }
 .box9{
@@ -215,6 +272,11 @@
     flex-direction: column;
     align-content: center;
     margin-bottom: 8%;
+    img{
+        @media @phone{
+            margin-left: 5%;
+        }
+    }
     @media @phone{
         width: 90%;
     }
@@ -222,6 +284,11 @@
         margin: 0;
         margin-right: 2%;
         text-align: center;
+    }
+    a{
+        @media @tablet{
+            margin-right: 3%;
+        }
     }
 }
 .box10{
@@ -238,6 +305,16 @@
         margin: 0;
         margin-right: 2%;
         text-align: center;
+    }
+    img{
+        @media @tablet{
+            margin-top: 17%;
+        }
+        @media @tablet{
+            margin-top: 0%;
+            width: 32%;
+            margin-left: 4%;
+        }
     }
 }
 
@@ -260,7 +337,6 @@
         }
     }
 
-<<<<<<< HEAD
    
 
     // footer{
@@ -269,6 +345,4 @@
     //             bottom: 45%;
     //     }
     // }
-=======
->>>>>>> 638844f76c8dd5f84f7db14c46e350485b5b6a39
     
