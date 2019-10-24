@@ -2,7 +2,6 @@
 
 nav{
 .links{
-    width: 90%;
     overflow-x: hidden;
     a{
         @media @tablet{
@@ -26,8 +25,9 @@ nav{
         align-items: @ctr;
         font-size: 1.8rem;
         opacity: .6;
-        
+        border-radius: 15px;
         img{
+            border-radius: 15px;
             margin-bottom: 2%;
             width: 50%;
             @media @phone{
@@ -191,9 +191,7 @@ nav{
         @media @phone{
             width: 30%
         }
-        @media @small-smartphone{
-            width: 15%;
-        }
+        
     }
     @media @tablet{
         margin: 0;
