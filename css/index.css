@@ -157,37 +157,9 @@ p {
   font-size: 2rem;
   font-family: 'Farro', sans-serif;
 }
-@font-face {
-  font-family: 'Electrolize';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Electrolize'), local('Electrolize-Regular'), url(https://fonts.gstatic.com/s/electrolize/v8/cIf5Ma1dtE0zSiGSiED7AXEBuIo.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Farro';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Farro Regular'), local('Farro-Regular'), url(https://fonts.gstatic.com/s/farro/v1/i7dEIFl3byGNHaVKFr4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Jaldi';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Jaldi'), local('Jaldi-Regular'), url(https://fonts.gstatic.com/s/jaldi/v6/or3sQ67z0_CI33NTbJQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Russo One';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Russo One'), local('RussoOne-Regular'), url(https://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsHOz8mM.ttf) format('truetype');
-}
 nav {
   display: flex;
-  background-color: white;
+  background-color: #F88888;
 }
 nav .icon-link {
   width: 5%;
@@ -206,7 +178,7 @@ nav .header-img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 75%;
+  width: 85%;
   padding: 5px;
 }
 @media (max-width: 500px) {
@@ -221,7 +193,6 @@ nav .header-img h2 {
 }
 nav .header-img img {
   width: 100%;
-  transform: rotate(-90deg);
 }
 @media (max-width: 500px) {
   nav .header-img img {
@@ -229,7 +200,7 @@ nav .header-img img {
   }
 }
 nav .links {
-  width: 25%;
+  width: 13%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -260,6 +231,9 @@ nav .links a:hover {
 }
 .large-img-container {
   background-color: #A9A9A9;
+}
+nav h2 {
+  color: #333355;
 }
 .container-icon {
   display: flex;
@@ -376,7 +350,6 @@ footer .bottom-red-box small {
   }
 }
 nav .links {
-  width: 90%;
   overflow-x: hidden;
 }
 @media (max-width: 800px) {
@@ -398,8 +371,10 @@ nav .links {
   align-items: center;
   font-size: 1.8rem;
   opacity: 0.6;
+  border-radius: 15px;
 }
 .boxes img {
+  border-radius: 15px;
   margin-bottom: 2%;
   width: 50%;
 }
@@ -616,11 +591,6 @@ nav .links {
 @media (max-width: 500px) {
   .box4 img {
     width: 30%;
-  }
-}
-@media (min-width: 200px) {
-  .box4 img {
-    width: 15%;
   }
 }
 @media (max-width: 800px) {
