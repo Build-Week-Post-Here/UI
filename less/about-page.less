@@ -16,8 +16,8 @@ nav{
   .boxes{
         width: 20vw;
         height: 35vh;
-        border:3px solid orange;
-        background: coral;
+        border:3px  #FF5B5B;
+        background: #F88888;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
@@ -27,7 +27,7 @@ nav{
         opacity: .6;
         border-radius: 15px;
         img{
-            border-radius: 15px;
+            border-radius: 500px;
             margin-bottom: 2%;
             width: 50%;
             @media @phone{
@@ -166,6 +166,9 @@ nav{
     flex-direction: column;
     align-content: @ctr;
     .grow-animation();
+    img{
+        width: 45%;
+    }
     @media @phone{
         width: @width-for-boxes;
     }
