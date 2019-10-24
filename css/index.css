@@ -375,8 +375,12 @@ footer .bottom-red-box small {
     padding: 5% 0;
   }
 }
+nav .links {
+  width: 90%;
+  overflow-x: hidden;
+}
 @media (max-width: 800px) {
-  .links a {
+  nav .links a {
     padding-right: 3%;
     width: 100%;
     text-align: center;
@@ -405,6 +409,11 @@ footer .bottom-red-box small {
     margin-right: 5%;
     justify-content: space-evenly;
     margin-left: 4%;
+  }
+}
+@media (max-width: 1500px) {
+  .boxes img {
+    width: 40%;
   }
 }
 .boxes h4 {
@@ -461,6 +470,11 @@ footer .bottom-red-box small {
     margin-bottom: 3%;
   }
 }
+@media (min-width: 260px) {
+  .upper-content p {
+    font-size: 1.8rem;
+  }
+}
 .box1 {
   margin: 3% 0 3% 0;
   display: flex;
@@ -491,6 +505,26 @@ footer .bottom-red-box small {
 @media (max-width: 1000px) {
   .box1 {
     margin-left: 4%;
+  }
+}
+@media (max-width: 1224px) {
+  .box1 {
+    margin-left: 0.5%;
+  }
+}
+@media (max-width: 1500px) {
+  .box1 {
+    margin-left: 0.5%;
+  }
+}
+@media (max-width: 1824px) {
+  .box1 {
+    margin-left: 0.5%;
+  }
+}
+@media (min-width: 1825px) {
+  .box1 {
+    margin-left: 0.5%;
   }
 }
 .box2 {
@@ -584,6 +618,11 @@ footer .bottom-red-box small {
     width: 30%;
   }
 }
+@media (min-width: 200px) {
+  .box4 img {
+    width: 15%;
+  }
+}
 @media (max-width: 800px) {
   .box4 {
     margin: 0;
@@ -601,6 +640,16 @@ footer .bottom-red-box small {
     margin-top: 0%;
     height: 63%;
     margin-left: 5%;
+  }
+}
+@media (max-width: 1500px) {
+  .box4 img {
+    width: 30%;
+  }
+}
+@media (min-width: 200px) {
+  .box4 img {
+    height: initial;
   }
 }
 .box5 {
@@ -626,6 +675,11 @@ footer .bottom-red-box small {
     margin-left: 4%;
   }
 }
+@media (max-width: 1500px) {
+  .box5 img {
+    width: 30%;
+  }
+}
 @media (max-width: 500px) {
   .box5 {
     width: 90%;
@@ -641,6 +695,26 @@ footer .bottom-red-box small {
 @media (max-width: 1000px) {
   .box5 {
     margin-left: 4%;
+  }
+}
+@media (max-width: 1224px) {
+  .box5 {
+    margin-left: 0.5%;
+  }
+}
+@media (max-width: 1500px) {
+  .box5 {
+    margin-left: 0.5%;
+  }
+}
+@media (max-width: 1824px) {
+  .box5 {
+    margin-left: 0.5%;
+  }
+}
+@media (min-width: 1825px) {
+  .box5 {
+    margin-left: 0.5%;
   }
 }
 .box6 {
@@ -679,8 +753,23 @@ footer .bottom-red-box small {
     margin-right: 2%;
   }
 }
+@media (max-width: 360px) {
+  .box6 a {
+    margin-left: -13%;
+  }
+}
+@media (min-width: 260px) {
+  .box6 a {
+    margin-left: -2%;
+  }
+}
 .box6 i {
   margin-bottom: 4%;
+}
+@media (max-width: 1224px) {
+  .box6 {
+    text-align: center;
+  }
 }
 .box7 {
   margin: 3% 0 3% 0;
@@ -752,6 +841,11 @@ footer .bottom-red-box small {
   .box8 img {
     width: 29%;
     margin-left: 4%;
+  }
+}
+@media (max-width: 1500px) {
+  .box8 img {
+    width: 30%;
   }
 }
 .box9 {

@@ -1,4 +1,9 @@
+
+
+nav{
 .links{
+    width: 90%;
+    overflow-x: hidden;
     a{
         @media @tablet{
        padding-right: 3%;
@@ -6,6 +11,7 @@
        text-align: @ctr;
         }
     }
+}
 }
 
   .boxes{
@@ -20,6 +26,7 @@
         align-items: @ctr;
         font-size: 1.8rem;
         opacity: .6;
+        
         img{
             margin-bottom: 2%;
             width: 50%;
@@ -29,6 +36,10 @@
                 justify-content: space-evenly;
                 margin-left: 4%;
             }
+            @media @desktop-mid{
+                width: 40%;
+            }
+           
         
             
         }
@@ -63,6 +74,7 @@
         @media @phone {
             height: 480vh;
         }
+       
         
     }
 
@@ -76,6 +88,11 @@
         }
         @media @tablet{
             margin-bottom: 3%;
+        }
+        p{
+            @media @mid-small-smartphone{
+                font-size: 1.8rem;
+            }
         }
     }
     
@@ -100,6 +117,18 @@
     }
     @media @desktop{
         margin-left: 4%;
+    }
+    @media @desktop-low-mid{
+        margin-left: .5%;
+    }
+    @media @desktop-mid{
+        margin-left: .5%;
+    }
+    @media @desktop-large{
+        margin-left: .5%;
+    }
+    @media @desktop-XL{
+        margin-left: .5%;
     }
  
 }
@@ -162,12 +191,16 @@
         @media @phone{
             width: 30%
         }
+        @media @small-smartphone{
+            width: 15%;
+        }
     }
     @media @tablet{
         margin: 0;
         margin-right: 2%;
         text-align: @ctr;
     }
+
     img{
         @media @tablet{
             margin-top: 12%;
@@ -176,6 +209,12 @@
             margin-top: 0%;
             height: 63%;
             margin-left: 5%;
+        }
+        @media @desktop-mid{
+            width: 30%;
+        }
+        @media @small-smartphone{
+            height: initial;
         }
 }
 }
@@ -192,6 +231,9 @@
             width: 30%;
             margin-left: 4%;
         }
+        @media @desktop-mid{
+            width: 30%;
+        }
     }
     @media @phone{
         width: @width-for-boxes;
@@ -203,6 +245,18 @@
     }
     @media @desktop{
         margin-left: 4%;
+    }
+    @media @desktop-low-mid{
+        margin-left: .5%;
+    }
+    @media @desktop-mid{
+        margin-left: .5%;
+    }
+    @media @desktop-large{
+        margin-left: .5%;
+    }
+    @media @desktop-XL{
+        margin-left: .5%;
     }
 }
 .box6{
@@ -230,11 +284,19 @@
         @media @tablet{
             margin-right: 2%;
         }
-        
+        @media @galaxy-s5{
+            margin-left: -13%;
+        }
+        @media @mid-small-smartphone{
+            margin-left: -2%;
+        }
     }
     i{
         margin-bottom: 4%;
         
+    }
+    @media @desktop-low-mid{
+        text-align: center;
     }
 }
 .box7{
@@ -286,6 +348,9 @@
             width: 29%;
             margin-left: 4%;
             
+        }
+        @media @desktop-mid{
+            width: 30%;
         }
     }
 }
@@ -355,11 +420,12 @@
         justify-content: space-evenly;
         width: 100%;
         height: 100%;
+        
         @media @phone{
             flex-direction: column;
             max-width: 100%;
             flex-wrap: nowrap;
-            align-items: @ctr;
+            align-items: @ctr; 
         }
         @media @tablet{
             display: flex;
