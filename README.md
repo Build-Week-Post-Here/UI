@@ -1,4 +1,4 @@
-# Reddit Ranker   [Click Here](https://reddit-ranker.netlify.com/)
+# [Reddit Ranker](https://reddit-ranker.netlify.com/)
 
 ## About:
 
